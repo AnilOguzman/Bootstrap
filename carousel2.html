@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="extra.css" rel="stylesheet">
+    <style>
+        .myslide{
+            z-index: 3;
+            background-color: rgba(0, 0, 0, 0.5)!important; /*burda sadece kartın rengi soluklaştı yazının rengi aynı kaldı*/  /*Bootstrapin kendi komutunu görmezden geliyo !important ile*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container"><!--eğer slayt tüm sayfaya yayılsın istiyosak container yerine container-fluid ve p-0 kullanmalıyız ayrıca rowun yanına g-0 yapmalıyız-->
+        <div class="row"> 
+            <div class="col">
+                <div class="carousel slide carousel-fade carousel-dark position-relative" id="mySlide" data-bs-touch="false" data-bs-interval="false"> <!--touch ve interval istediğin zaman dokunarak kaydırma özelliğini elinden aldık ayrıca kendi kendine otomatik başlamaz ride ı sildiğimiz için -->
+                    <!--carousel-darkla içindeki yazıları indikatörleri ve ilerleme çubuklarını siyah yaptık-->
+                    <!--position relative içindeki yazıların yerini ayarlayabilmek için-->
+                    <div class="position-absolute bottom-0 start-0 myslide text-white card"> <!--yazıların yerini ayarlamak için-->
+                       <div class="card-body mb-5 ms-5">
+                        <h3> Ayrıcalıkları keşfet</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Earum sit aspernatur laboriosam quam magni quia, corporis ad nulla iure illum aliquid nobis aut ipsa necessitatibus. Provident minima eius ab tempore.</p>
+                            <a href="#" class="btn btn-danger">Bize katıl</a>
+                       </div>
+                        </div>
+
+                    <div class="carousel-indicators"> <!--alt tarafta hangi resimde olduğunu götserir-->
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="0" class="active"></button> <!--active hangisiyle başlayacağını söyler-->
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="1" ></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="2" ></button>
+                        <button type="button" data-bs-target="#mySlide" data-bs-slide-to="3" ></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="500"> <!-- zaman aralığını ayarladık normali 5 saniye yani 5000 dir-->
+                            <img src="Resimler1/face.png" class="d-block w-100" alt="slide-1">
+                            <div class="carousel-caption text-dark d-none d-md-block"> <!--alt yazı oluşturma--> <!--md altında alt yazıyı göstermezsonrasında gösterir-->
+                                <h1>Slide başlığı </h1>
+                                <p>slide alt yazısı</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item " data-bs-interval="500">
+                            <img src="Resimler1//Elon.jpg" class="d-block w-100" alt="slide-1">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="500">
+                            <img src="Resimler1/insta.jpg" class="d-block w-100" alt="slide-1">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="500">
+                            <img src="Resimler1/Twitter.png" class="d-block w-100" alt="slide-1">
+                        </div>
+                    </div>
+                        
+                        <button type="button" class="carousel-control-prev" data-bs-target="#mySlide" data-bs-slide="prev"> <!--önceki resme ve sonraki resme geçme butonu yaotık-->
+                            <span class="bi bi-arrow-left-square fs-2"></span>  <!--butonların resmini özel olarak ayarladık font-size değiştridik-->
+                        </button>
+                        <button type="button" class="carousel-control-next" data-bs-target="#mySlide" data-bs-slide="next">
+                            <span class="bi bi-arrow-rigt-square"></span>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>       
+    <script>
+        var myCaro=document.querySelector("#mySlide"); 
+        var caro= new bootstrap.carousel(myCaro,{
+            interval:200  /*JS kullanarak süre değiştirdik*/
+        })
+    </script>
+</body>
+</html>

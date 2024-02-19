@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="extra.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container"> <!--range-->
+        <div class="row mt-5">
+            <div class="col">
+                <form>
+                    <div class="mb-3 row">
+                        <label class="form-label col-sm-2" for="myRange">Aralık seç</label>
+                        <div class="col-sm-10">
+                            <input type="range" class="form-range" id="myRange">
+                            <input type="range" class="form-range" id="myRange" min="0" max="10" step="5"> <!--step kaçar kaçar ilerleyeceğini gösterir-->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container"> <!--input grupları-->
+        <div class="row mt-5">
+            <div class="col">
+                <form>
+                    <div class="mb-3 row">
+                        <label class="form-label col-sm-2" for="myGroup">Grup1:</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-lg"><!--boyutunu ayarladık-->
+                                <input type="text" class="form-control" placeholder="eposta adresinizi giriniz" id="myGroup">
+                                <span class="input-group-text" id="basic">@gmail.com</span>
+                            </div>
+                    </div>
+                    
+                    <div class="mb-3 row">
+                        <label class="form-label col-sm-2" for="myGroup1 myGroup2">Grup2:</label>
+                        <div class="col-sm-10">
+                            <div class="input-group ">
+                                <span class="input-group-text" id="basic1">Ad ve Soyad</span>
+                                <input type="text" class="form-control" placeholder="Ad" id="myGroup1">
+                                <input type="text" class="form-control" placeholder="Soyad" id="myGroup2">
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

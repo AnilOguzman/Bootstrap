@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="extra.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <div class="dropdown">
+                    <button type="button" id="dropBtn" class="btn btn-secondary dropdown-toggle btn-lg" data-bs-toggle="dropdown">Dropdown button</button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-header">Başlık</li><!--header kullandık-->
+                        <li><a href="#" class="dropdown-item">Link</a></li>
+                        <li><a href="#" class="dropdown-item">Diğer Link</a></li>
+                        <li><a href="#" class="dropdown-item">Başka Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#"class="dropdown-item">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">   
+                <div class="dropdown"><!--daha koyu menü yaptık-->
+                    <button type="button" id="dropBtn" class="btn btn-secondary dropdown-toggle btn-lg" data-bs-toggle="dropdown">Dropdown button</button>
+                    <ul class="dropdown-menu dropdown-menu-dark"><!--burda yaptık-->
+                        <li><a href="#" class="dropdown-item active" >Link</a></li><!--active yaptık-->
+                        <li><a href="#" class="dropdown-item disabled" >Diğer Link</a></li><!--disabled yaptık-->
+                        <li><a href="#" class="dropdown-item">Başka Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#"class="dropdown-item">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">   
+                <div class="dropup" style="margin-top:10rem ;"><!--menüyü üstte açtı-->
+                    <button type="button" id="dropBtn" class="btn btn-secondary dropdown-toggle btn-lg" data-bs-toggle="dropdown">Dropdown button</button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a href="#" class="dropdown-item active" >Link</a></li><!--active yaptık-->
+                        <li><a href="#" class="dropdown-item disabled" >Diğer Link</a></li><!--disabled yaptık-->
+                        <li><a href="#" class="dropdown-item">Başka Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#"class="dropdown-item">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">   
+                <div class="dropend"><!--menüyü sağda açtı-->
+                    <button type="button" id="dropBtn" class="btn btn-secondary dropdown-toggle btn-lg" data-bs-toggle="dropdown">Dropdown button</button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a href="#" class="dropdown-item active" >Link</a></li><!--active yaptık-->
+                        <li><a href="#" class="dropdown-item disabled" >Diğer Link</a></li><!--disabled yaptık-->
+                        <li><a href="#" class="dropdown-item">Başka Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#"class="dropdown-item">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">   
+                <div class="dropstart"><!--menüyü solda açtı-->
+                    <button type="button" id="dropBtn" class="btn btn-secondary dropdown-toggle btn-lg" data-bs-toggle="dropdown">Dropdown button</button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a href="#" class="dropdown-item active" >Link</a></li><!--active yaptık-->
+                        <li><a href="#" class="dropdown-item disabled" >Diğer Link</a></li><!--disabled yaptık-->
+                        <li><a href="#" class="dropdown-item">Başka Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#"class="dropdown-item">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">   <!--menü hizalama normal hali-->
+                <div class="dropdown">
+                    <button type="button" id="dropBtn" class="btn btn-secondary dropdown-toggle btn-lg" data-bs-toggle="dropdown">Dropdown buttonu menüsünü hizalama</button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a href="#" class="dropdown-item active" >Link</a></li><!--active yaptık-->
+                        <li><a href="#" class="dropdown-item disabled" >Diğer Link</a></li><!--disabled yaptık-->
+                        <li><a href="#" class="dropdown-item">Başka Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#"class="dropdown-item">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">   <!--mmenü hizalama sağa yaslanmış hali-->
+                <div class="dropdown">
+                    <button type="button" id="dropBtn" class="btn btn-secondary dropdown-toggle btn-lg" data-bs-toggle="dropdown">Dropdown buttonu menüsünü hizalama</button>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                        <li><a href="#" class="dropdown-item active" >Link</a></li><!--active yaptık-->
+                        <li><a href="#" class="dropdown-item disabled" >Diğer Link</a></li><!--disabled yaptık-->
+                        <li><a href="#" class="dropdown-item">Başka Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#"class="dropdown-item">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">   <!--mmenü hizalama duyarlılık-->
+                <div class="dropdown">
+                    <button type="button" id="dropBtn" class="btn btn-secondary dropdown-toggle btn-lg" data-bs-toggle="dropdown" data-bs-display="static">Dropdown buttonu menüsünü hizalama</button>
+                    <!--data-bs-display yaptık duyarlı hale getirmek için-->
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end"><!--lg-end kullandık-->
+                        <li><a href="#" class="dropdown-item active" >Link</a></li><!--active yaptık-->
+                        <li><a href="#" class="dropdown-item disabled" >Diğer Link</a></li><!--disabled yaptık-->
+                        <li><a href="#" class="dropdown-item">Başka Link</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#"class="dropdown-item">Ayrılmış Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>         
+</body>
+</html>

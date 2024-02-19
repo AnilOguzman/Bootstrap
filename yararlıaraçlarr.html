@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="extra.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container my-2 p-3">
+        <div class="clearfix mb-5">  <!--clearfix alttaki kutularla birbirine girmemesi için hep floatla kullanılmalı-->
+            <span class="float-start float-xl-end bg-dark text-white p-2">Sol float</span>
+            <span class="float-end bg-danger text-white p-2">Sağ float</span>
+        </div>
+    </div>
+
+    <div class="container my-2 p-3">
+        <div class="row">
+            <div class=" col-md-6">
+                <p class="user-select-all">Kullanıcı tıkladığında direkt seçilecek</p>
+                <p class="user-select-auto">Default olan</p>
+                <p class="user-select-none">Seçilemez</p>
+                <a href="#" class="pe-none" tabindex="-1" aria-disabled="true">TIKLANAMAZ LİNK</a> 
+                <a href="#" class="pe-auto" >TIKLANABİLİR</a>
+                <br><br>
+                <div class="opacity-100 box">OPAKLIK100</div>
+                <div class="opacity-75 box">OPAKLIK75</div>
+                <div class="opacity-50 box">OPAKLIK50</div>
+                <div class="opacity-25 box">OPAKLIK25</div>
+<br><br>
+                <div class="shadow-none p-3 mb-5 bg-light rounded"> dsjdsjnkfufdhfhfududshdsufsdksfdkuhsdkhds</div>
+                <div class="shadow-sm p-3 mb-5 bg-light rounded"> dshbhjdsbhjdjhbdd</div>
+                <div class="shadow p-3 mb-5 bg-light rounded">dshdhjuhduujhdfuhdus</div>
+                <div class="shadow-lg p-3 mb-5 bg-light rounded">sdjhdshbdbhfhdbds</div>
+             </div>
+ <br><br>
+             
+                <div class="col-md-3 bg-warning overflow-auto" style="height:6rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor placerat semper. Sed rutrum, mauris et tincidunt pellentesque, arcu metus efficitur quam, vel facilisis orci massa quis lorem. Ut in viverra tortor. Donec tempus consequat turpis vel pellentesque. Pellentesque ullamcorper, odio et lacinia euismod, lectus arcu accumsan tortor, nec commodo ligula est in metus. Nullam vitae diam risus. Fusce pellentesque posuere justo, eget rutrum enim vestibulum eget. Curabitur vulputate sapien ut quam volutpat tristique. Vestibulum</div>
+                <div class="col-md-3 bg-danger overflow-hidden" style="height:6rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor placerat semper. Sed rutrum, mauris et tincidunt pellentesque, arcu metus efficitur quam, vel facilisis orci massa quis lorem. Ut in viverra tortor. Donec tempus consequat turpis vel pellentesque. Pellentesque ullamcorper, odio et lacinia euismod, lectus arcu accumsan tortor, nec commodo ligula est in metus. Nullam vitae diam risus. Fusce pellentesque posuere justo, eget rutrum enim vestibulum eget. Curabitur vulputate sapien ut quam volutpat tristique. Vestibulum</div>
+                <div class="col-md-3 bg-info overflow-visible" style="height:6rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.putate sapien ut quam volutpat tristique. Vestibulum</div> 
+                <div class="col-md-3 bg-success overflow-scroll" style="height:6rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor placerat semper. Sed rutrum, mauris et tincidunt pellentesque, arcu metus efficitur quam, vel facilisis orci massa quis lorem. Ut in viverra tortor. Donec tempus consequat turpis vel pellentesque. Pellentesque ullamcorper, odio et lacinia euismod, lectus arcu accumsan tortor, nec commodo ligula est in metus. Nullam vitae diam risus. Fusce pellentesque posuere justo, eget rutrum enim vestibulum eget. Curabitur vulputate sapien ut quam volutpat tristique. Vestibulum</div>
+            <!--visible da hiçbi şey yazmasak da aynı şeye denk geliyo-->
+ <br><br><br><br>
+                <div class="col-md-12 bg-warning visible mt-5">Ben görünürüm</div>  <!--bunun görnmezliği d-none gibi değil cisim görünmez ama kod görür varmış gibi davranı -->
+                <div class="col-md-12 bg-danger invisible">djshdjsıufh bu htyf t fy rftg uyh ug htff fyt</div> <!--mesela burda görmesek de var gibi davrandı bi alttan devam etti-->
+                <div class="col-md-12 bg-warning ">Ben görünürüm</div>
+ <br><br><br>
+                <div class="col-md-12 bg-dark text-warning p-3">
+                    <span class="visually-hidden">Ekran okuyucu hariç beni kimse okuyamaz.</span>GÖrünürüm <!-- sadece sitemizi okuyan yardımcı cihazların görmesi için kullanılır-->
+                </div>               
+            </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="extra.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <div class="accordion" id="myAccordion"> <!-- accordion-flush classını kullanırsak kenarlıklar gider -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#first">
+                                Bootstrap eğitimi
+                            </button>
+                        </h2>
+                        <div id="first" class="accordion-collapse collapse show " data-bs-parent="#myAccordion"> <!-- parent sistemi birine bastığında diğerinin kapanmasını sağlıyo -->
+                            <div class="accordion-body">
+                                <strong>Bootstrap Eğitimi</strong>Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit. Assumenda reprehenderit hic ea, voluptates veniam totam optio rerum numquam, ratione rem, 
+                                vel tenetur voluptatum alias nostrum natus illum quasi a labore.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#second"> <!-- accordion button collapsed yaptık burda üstekinden farklı-->
+                                Python eğitimi                                                                                           <!--eğer ilkinin de açık olmamasını istiyosak showu sil collapsed ekle-->
+                            </button>
+                        </h2>
+                        <div id="second" class="accordion-collapse collapse  " data-bs-parent="#myAccordion">
+                            <div class="accordion-body">
+                                <strong>Bootstrap Eğitimi</strong>Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit. Assumenda reprehenderit hic ea, voluptates veniam totam optio rerum numquam, ratione rem, 
+                                vel tenetur voluptatum alias nostrum natus illum quasi a labore.
+                                <img src="Resimler1/face.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>          
+</body>
+</html>

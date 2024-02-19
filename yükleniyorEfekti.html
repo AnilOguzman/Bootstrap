@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="extra.css" rel="stylesheet">
+</head>
+<body>
+ <div class="container"> <!--parlayıp sönme efekti oluşturduk placeholder-glow-->
+    <div class="row mt-5">
+        <div class="col">
+            <p class="placeholder-glow">
+                <span class="placeholder col-9"></span>
+                <a href="#" class="btn btn-danger btn-sm disabled placeholder col-4 mt-3 "></a>
+            </p>
+        </div>
+    </div>
+ </div>
+ <div class="container"> <!--dalga efekti oluşturduk placeholder-wave-->
+    <div class="row mt-5">
+        <div class="col">
+            <p class="placeholder-wave">
+                <span class="placeholder col-9"></span>
+                <a href="#" class="btn btn-danger btn-sm disabled placeholder col-4 mt-3 "></a>
+            </p>
+        </div>
+    </div>
+ </div>
+ 
+ <div class="container row-cols-3"> <!--noralde JS ile daha güzel yapılır ama burda bi sayfada nasıl kullanılır az çok gösterdik yükleniyordan sonra yazının çıkması JS ile yapılır-->
+    <div class="row mt-5">
+        <div class="col">
+            <div class="card">
+                <img src="Resimler1/insta.jpg" class="img-fluid img-top" alt="kart resmi">
+                <div class="card-body">
+                    <h5  class="card-title">Kart Başlığı</h5>
+                    <p class="card-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus minima, rerum
+                         aspernatur tempora autem, laborum consequatur minus voluptatem non id praesentium repellat quibusdam, necessitatibus expedita aperiam inventore quasi adipisci qui.
+                    </p>
+                    <a href="#" class="btn btn-sm btn-danger">Devamını gör</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="Resimler1/insta.jpg" class="img-fluid img-top" alt="kart resmi">
+                <div class="card-body">
+                    <h5  class="card-title placeholder-glow">
+                        <span class="placeholder col-4"></span>
+                    </h5>
+
+                    <p class="card-text placeholder-glow">
+                        <span class="placeholder col-8"></span> <!--burdaki colların amacı yukardaki yazımızın boyutunda oluşturmak benimki eşit olmamış olabilir-->
+                        <span class="placeholder-xs col-5"></span><!--placeholderlalrı inceltiyo xs-->
+                        <span class="placeholder col-7"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-6"></span>
+                    </p>
+                    <a href="#" class="btn btn-sm btn-danger disabled placeholder col-4"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>          
+</body>
+</html>

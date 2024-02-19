@@ -1,0 +1,62 @@
+<div class="form-group  col-xs-4 row" style="position:relative; top:50px; left:150px;">
+                        <label class="form-label " for="ilçe">İlçe</label>
+                        <input type="text" id="ilçe" class="form-control " required />
+                    </div>
+
+                    <div class="form-group col-xs-4 row" style="position:relative; top:50px; left:180px;">
+                        <label class="form-label " for="semt">Semt</label>
+                        <input type="text" id="semt" class="form-control" required/>
+                    </div>
+                    <br />
+                    <div class="form-group  row col-lg-12" style="position:relative; top:50px; left:180px;">
+                        <label class="form-label " for="sokak" style="position:relative; left:120px;">Sokak</label>
+                        <input type="text" id="sokak" class="form-control " style="position:relative; " required/>
+                    </div>
+                    <div class="form-group col-xs-4 row" style="position:relative; top:70px; left:150px;">
+                        <label class="form-label " for="ApartmanAdi">Apartman Adı</label>
+                        <input type="text" id="ApartmanAdi" class="form-control"required />
+                    </div>
+
+                    <div class="form-group col-xs-4 row" style="position:relative; top:70px; left:180px;">
+                        <label class="form-label " for="ApNo">Apartman Numarası</label>
+                        <input type="number" id="ApNo" class="form-control"required />
+                    </div>
+                    <div class="row"></div>
+                    <div class="form-group col-xs-4 row" style="position:relative; top:70px; left:150px;">
+
+                        <label class="form-label " for="kat">Kat</label>
+                        <input type="number" id="kat" class="form-control" required/>
+                    </div>
+
+                    <div class="form-group col-xs-4 row" style="position:relative; top:70px; left:180px;">
+                        <label class="form-label " for="DaNo">Daire Numarası</label>
+                        <input type="number" id="DaNo" class="form-control" required/>
+                    </div>
+
+
+
+
+
+
+
+<div class="navbar navbar-fixed-top" style="background-color:burlywood">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li style="font-size:20px">@Html.ActionLink("Menü", "Food", "User", new { style = "color:black" })</li>
+                    <li style="font-size:20px">@Html.ActionLink("Sepet", "Cart", "User", new { style = "color:black" })</li>
+                    <li style="font-size:20px">@Html.ActionLink("Siparişlerim", "UserOrders", "User", new { style = "color:black" })</li>
+                    <li style="font-size:20px">@Html.ActionLink("Hesabım", "Account", "User", new { style = "color:black" })</li>
+                    <li id="b" style="font-size:20px">@Html.ActionLink("Çıkış Yap", "Quit", "User", new { style = "color:black;" })</li>
+                </ul>
+            </div>
+        </div>
+    </div>
